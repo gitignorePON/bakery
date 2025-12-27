@@ -9,15 +9,18 @@
     src: url(/bakery/fonts/Philosopher-Regular.ttf);
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     background-color: #ffe2b0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 2rem 0 2rem 0;
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 ul {
@@ -31,7 +34,7 @@ img {
 
 li {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 10rem;
 }
 
 li:last-child {
@@ -41,14 +44,14 @@ li:last-child {
 a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-transform: uppercase;
     display: inline-block;
     transition: 0.3s;
 }
 
 nav {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-family: Roboto, sans-serif;
     font-weight: 700;
 }
@@ -56,11 +59,11 @@ nav {
 .section-image {
     position: relative;
     background-image: url(/bakery/img/background_image.jpg);
-    height: 640px;
+    height: 64rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     transition: 0.3s;
 }
 
@@ -68,56 +71,56 @@ nav {
     position: absolute;
     top: 54%;
     left: 51%;
-    height: 190px;
-    width: 420px;
+    height: 19rem;
+    width: 42rem;
     background: linear-gradient(180deg,
             rgba(244, 213, 178, 0.8) 0%,
             rgba(234, 156, 65, 0.8) 100%);
-    padding-top: 15px;
+    padding-top: 1.5rem;
     transition: 0.3s;
 }
 
 .section-image__border {
     border: 1px solid black;
-    height: 160px;
-    width: 390px;
+    height: 16rem;
+    width: 39rem;
     margin: 0 auto;
-    padding: 17px 0 0 28px;
+    padding: 1.7rem 0 0 2.8rem;
 }
 
 .section-image__title {
-    font-size: 36px;
-    margin-bottom: 9px;
+    font-size: 3.6rem;
+    margin-bottom: 0.9rem;
     font-family: Philosopher-Regular;
     font-weight: 400;
     transition: 0.3s;
 }
 
 .section-image__text {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-family: Roboto, sans-serif;
     font-weight: 400;
 }
 
 .section-description {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .section-description__icon-box {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .section-description__icon-box img {
-    margin-right: 76px;
+    margin-right: 7.6rem;
 }
 
 .section-description__icon-box img:last-child {
-    margin-right: 0px;
+    margin-right: 0rem;
 }
 
 .section-description__text-box {
-    width: 1000px;
+    width: 100rem;
     text-align: center;
     margin: 0 auto;
     font-family: Roboto, sans-serif;
@@ -125,13 +128,13 @@ nav {
 }
 
 .section-description__title {
-    font-size: 96px;
+    font-size: 9.6rem;
     font-family: Philosopher-Regular;
     font-weight: 400;
 }
 
 .section-description__text {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .red {
@@ -140,25 +143,25 @@ nav {
 
 .section-map {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .section-map__line {
-    border-bottom: 1px solid #999999;
-    width: 1024px;
+    border-bottom: 0.1rem solid #999999;
+    width: 102.4rem;
     margin: 0 auto;
 }
 
 .section-map__title {
-    font-size: 36px;
+    font-size: 3.6rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-family: Philosopher-Regular;
 }
 
 iframe {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 a:hover {
@@ -181,6 +184,6 @@ a:hover {
 
 .section-image__block:active {
     background: linear-gradient(180deg,
-                rgba(244, 213, 178, 1) 0%,
-                rgba(234, 156, 65, 1) 100%);
+            rgba(244, 213, 178, 1) 0%,
+            rgba(234, 156, 65, 1) 100%);
 }
