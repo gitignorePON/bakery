@@ -11,6 +11,8 @@
 
 body {
     background-color: #ffe2b0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 header {
@@ -21,6 +23,10 @@ header {
 ul {
     list-style-type: none;
     text-align: center;
+}
+
+img {
+    transition: 0.3s;
 }
 
 li {
@@ -37,6 +43,8 @@ a {
     color: black;
     font-size: 18px;
     text-transform: uppercase;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 nav {
@@ -53,6 +61,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .section-image__block {
@@ -61,12 +70,11 @@ nav {
     left: 51%;
     height: 190px;
     width: 420px;
-    background: linear-gradient(
-    180deg,
-     rgba(244, 213, 178, 0.8) 0%,
-     rgba(234, 156, 65, 0.8) 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(244, 213, 178, 0.8) 0%,
+            rgba(234, 156, 65, 0.8) 100%);
     padding-top: 15px;
+    transition: 0.3s;
 }
 
 .section-image__border {
@@ -82,6 +90,7 @@ nav {
     margin-bottom: 9px;
     font-family: Philosopher-Regular;
     font-weight: 400;
+    transition: 0.3s;
 }
 
 .section-image__text {
@@ -153,15 +162,25 @@ iframe {
 }
 
 a:hover {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-img:hover {
-    transform: scale(113%);
-    transition: transform 0.5s;
+    color: rgba(122, 65, 37, 0.8);
+    transform: scale(110%) rotate(10deg);
 }
 
 .section-image__block:hover {
     transform: scale(120%);
-    transition: transform 0.5s;
+}
+
+.icon:hover {
+    transform: scale(105%);
+    filter: drop-shadow(-0.5rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5));
+}
+
+.logo:active {
+    rotate: 360deg;
+}
+
+.section-image__block:active {
+    background: linear-gradient(180deg,
+                rgba(244, 213, 178, 1) 0%,
+                rgba(234, 156, 65, 1) 100%);
 }
